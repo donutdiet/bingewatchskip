@@ -1,3 +1,3 @@
-# savoreatskip
+# bingewatchskip
 
-A crowdsourced elo-based restaurant ranking app.
+A crowdsourced elo-based movie ranking app.

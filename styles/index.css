@@ -15,16 +15,16 @@ ul {
 
 a {
   text-decoration: none;
-  color: #E5E7EB;
-  font-size: 18px;
+  color: #e5e7eb;
+  font-size: 14px;
 }
 
 .header {
   padding: 24px 200px;
   display: flex;
   align-items: center;
-  background-color: #1F2937;
-  color: #F9FAF8;
+  background-color: #1f2937;
+  color: #f9faf8;
 }
 
 .logo {
@@ -42,8 +42,8 @@ a {
   padding: 40px 200px;
   display: flex;
   gap: 50px;
-  background-color: #1F2937;
-  color: #F9FAF8;
+  background-color: #1f2937;
+  color: #f9faf8;
 }
 
 .hero-section .container {
@@ -57,7 +57,7 @@ a {
 
 .hero-section .sub-text {
   font-size: 18px;
-  color: #E5E7EB;
+  color: #e5e7eb;
   padding: 8px 0;
 }
 
@@ -67,8 +67,8 @@ a {
   border-radius: 8px;
   margin-top: 8px;
   font-size: 18px;
-  background-color: #3382F6;
-  color: #F9FAF8;
+  background-color: #3382f6;
+  color: #f9faf8;
 }
 
 .hero-section img {
@@ -87,7 +87,7 @@ a {
 .about-section .main-text {
   font-size: 36px;
   font-weight: 900;
-  color: #1F2937; 
+  color: #1f2937;
 }
 
 .about-section .container {
@@ -104,14 +104,14 @@ a {
   gap: 8px;
   width: 200px;
   font-size: 18px;
-  color: #1F2937;
+  color: #1f2937;
 }
 
 .card img {
   object-fit: cover;
   width: 200px;
   height: 200px;
-  border: 3px solid #3882F6;
+  border: 3px solid #3882f6;
   border-radius: 20px;
 }
 
@@ -121,22 +121,22 @@ a {
   justify-content: flex-end;
   gap: 8px;
   padding: 96px 250px;
-  background-color: #E5E7EB;
+  background-color: #e5e7eb;
 }
 
-.review-section .quote{
+.review-section .quote {
   font-style: italic;
   font-weight: 300;
   font-size: 36px;
-  color: #1F2937;
+  color: #1f2937;
 }
 
 .review-section .person {
-  margin-right: 48px; 
+  margin-right: 48px;
   margin-left: auto;
   font-size: 24px;
   font-weight: 700;
-  color: #1F2937; 
+  color: #1f2937;
 }
 
 .call-to-action {
@@ -146,8 +146,8 @@ a {
   margin: 60px 200px;
   padding: 48px 128px;
   border-radius: 8px;
-  background-color: #3882F6;
-  color: #F8FAF8;
+  background-color: #3882f6;
+  color: #f8faf8;
   font-size: 18px;
 }
 
@@ -157,13 +157,13 @@ a {
 }
 
 .call-to-action .sign-up {
-  border: 2px solid #F8FAF8;
+  border: 2px solid #f8faf8;
   padding: 8px 36px;
   border-radius: 8px;
   margin-top: 8px;
   font-size: 18px;
-  background-color: #3382F6;
-  color: #F9FAF8;
+  background-color: #3382f6;
+  color: #f9faf8;
 }
 
 .footer {
@@ -172,7 +172,7 @@ a {
   align-items: center;
   height: 60px;
   padding: 36px 0;
-  background-color: #1F2937;
-  color: #F9FAF8;
+  background-color: #1f2937;
+  color: #f9faf8;
   font-size: 18px;
 }

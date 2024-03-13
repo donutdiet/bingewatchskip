@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  background-color: pink;
+}
+
+.logo {
+  padding: 10px;
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+li {
+  padding: 6px 14px 8px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px;
+  background-color: lightgreen;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+}
+
+.rankings {
+  flex: 1;
+  background-color: darkseagreen;
+}
+
+.misc {
+  width: 300px;
+  background-color: deepskyblue;
+}
