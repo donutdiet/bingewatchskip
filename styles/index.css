@@ -7,6 +7,7 @@
 body {
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
+  color: #f9faf8;
 }
 
 ul {
@@ -20,39 +21,43 @@ a {
 }
 
 .header {
-  padding: 24px 200px;
+  padding: 24px 140px;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   background-color: #1f2937;
-  color: #f9faf8;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 900;
 }
 
 .header .links {
   display: flex;
-  margin-left: auto;
-  gap: 16px;
+  gap: 18px;
 }
 
 .hero-section {
-  padding: 40px 200px;
+  padding: 20px 140px 45px 140px;
   display: flex;
-  gap: 50px;
+  gap: 40px;
   background-color: #1f2937;
-  color: #f9faf8;
 }
 
 .hero-section .container {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .hero-section .main-text {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 900;
+}
+
+.highlight {
+  color: #ee8590;
 }
 
 .hero-section .sub-text {
@@ -63,42 +68,44 @@ a {
 
 .container .sign-up {
   border: none;
-  padding: 8px 24px;
+  padding: 10px 24px;
   border-radius: 8px;
-  margin-top: 8px;
   font-size: 18px;
-  background-color: #3382f6;
+  font-weight: 700;
+  background-color: #3c9dd1;
   color: #f9faf8;
+  width: fit-content;
 }
 
 .hero-section img {
-  width: auto;
-  height: 325px;
+  width: 100%;
+  height: auto;
+  max-width: 425px;
 }
 
 .about-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 36px 200px;
-  gap: 40px;
+  padding: 46px 0;
+  gap: 20px;
 }
 
 .about-section .main-text {
-  font-size: 36px;
-  font-weight: 900;
+  font-size: 34px;
+  font-weight: 700;
   color: #1f2937;
 }
 
 .about-section .container {
   display: flex;
-  gap: 36px;
+  gap: 32px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: center;
   gap: 8px;
@@ -110,31 +117,29 @@ a {
 .card img {
   object-fit: cover;
   width: 200px;
-  height: 200px;
-  border: 3px solid #3882f6;
-  border-radius: 20px;
+  height: 160px;
+  border-radius: 16px;
 }
 
 .review-section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 8px;
-  padding: 96px 250px;
+  gap: 20px;
+  padding: 65px 160px;
   background-color: #e5e7eb;
 }
 
 .review-section .quote {
   font-style: italic;
   font-weight: 300;
-  font-size: 36px;
+  font-size: 28px;
   color: #1f2937;
 }
 
 .review-section .person {
-  margin-right: 48px;
   margin-left: auto;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   color: #1f2937;
 }
@@ -143,10 +148,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 60px 200px;
-  padding: 48px 128px;
+  margin: 50px 140px;
+  padding: 40px 110px;
   border-radius: 8px;
-  background-color: #3882f6;
+  background-color: #3c9dd1;
   color: #f8faf8;
   font-size: 18px;
 }
@@ -154,15 +159,16 @@ a {
 .call-to-action .main-text {
   font-weight: 700;
   font-size: 28px;
+  margin-bottom: 2px;
 }
 
 .call-to-action .sign-up {
   border: 2px solid #f8faf8;
-  padding: 8px 36px;
+  padding: 10px 0px;
   border-radius: 8px;
-  margin-top: 8px;
   font-size: 18px;
-  background-color: #3382f6;
+  background-color: #3c9dd1;
+  width: 160px;
   color: #f9faf8;
 }
 
@@ -170,9 +176,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  padding: 36px 0;
+  height: 46px;
+  padding: 10px 0;
   background-color: #1f2937;
   color: #f9faf8;
-  font-size: 18px;
+  font-size: 12px;
 }
