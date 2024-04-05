@@ -10,13 +10,14 @@
     <div class="sidebar">
       <div class="logo">BingeWatchSkip</div>
       <ul>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="#">Page 1</a></li>
         <li><a href="#">Page 2</a></li>
         <li><a href="#">Page 3</a></li>
         <li><a href="#">Page 4</a></li>
       </ul>
     </div>
-    <div style="flex: 1; display: flex; flex-direction: column">
+    <div class="content">
       <div class="header">
         <h1>Movie Rankings</h1>
         <div>Brief description</div>
@@ -33,11 +34,53 @@
             <input type="checkbox" id="filter3" />
             <label for="filter1">Filter 3</label>
           </div>
-          <a href="../index.html">Home</a>
         </div>
       </div>
       <div style="display: flex; flex: 1">
-        <div class="rankings">Rankings</div>
+        <div class="rankings">
+          <div class="row-header">
+            <div class="rank-number-label">RANK</div>
+            <div class="movie-name-label">MOVIE NAME</div>
+            <div class="genre-label">GENRE</div>
+            <div class="runtime-label">RUNTIME</div>
+            <div class="release-date-label">RELEASE</div>
+            <div class="trend-label">TREND</div>
+            <div class="score-label">SCORE</div>
+          </div>
+          <div class="row">
+            <div class="rank-number">1</div>
+            <div class="movie-name">Parasite<span class="rating">R</span></div>
+            <div class="genre">Comedy, Mystery & Thriller, Drama</div>
+            <div class="runtime">2h 12m</div>
+            <div class="release-date">Oct 11, 2019</div>
+            <div class="trend">0</div>
+            <div class="score">9999</div>
+          </div>
+          <div class="row">
+            <div class="rank-number">2</div>
+            <div class="movie-name">
+              Dune 2<span class="rating">PG-13</span>
+            </div>
+            <div class="genre">Sci-fi, Adventure, Action</div>
+            <div class="runtime">2h 46m</div>
+            <div class="release-date">Mar 4, 2024</div>
+            <div class="trend">+1</div>
+            <div class="score">9995</div>
+          </div>
+          <div class="row">
+            <div class="rank-number">3</div>
+            <div class="movie-name">
+              Spider-Man: Across the Spider-Verse<span class="rating"
+                >PG-13</span
+              >
+            </div>
+            <div class="genre">Action, Adventure, Comedy</div>
+            <div class="runtime">2h 20m</div>
+            <div class="release-date">Aug 8, 2023</div>
+            <div class="trend">-1</div>
+            <div class="score">9759</div>
+          </div>
+        </div>
         <div class="misc">Insights</div>
       </div>
     </div>
