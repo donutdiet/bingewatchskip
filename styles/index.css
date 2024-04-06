@@ -20,6 +20,15 @@ a {
   font-size: 14px;
 }
 
+button:hover {
+  filter: brightness(95%);
+  cursor: pointer;
+}
+
+button:active {
+  filter: brightness(90%);
+}
+
 .header {
   padding: 24px 140px;
   display: flex;
@@ -66,15 +75,28 @@ a {
   padding: 8px 0;
 }
 
-.container .sign-up {
+.button-container {
+  display: flex;
+  gap: 24px;
+}
+
+.rankings-button,
+.sign-up {
   border: none;
-  padding: 10px 24px;
+  padding: 10px 18px;
   border-radius: 8px;
   font-size: 18px;
   font-weight: 700;
-  background-color: #3c9dd1;
   color: #f9faf8;
   width: fit-content;
+}
+
+.sign-up {
+  background-color: #3c9dd1;
+}
+
+.rankings-button {
+  background-color: #ee8590;
 }
 
 .hero-section img {
