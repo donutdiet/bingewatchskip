@@ -1,3 +1,6 @@
+:root {
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +20,7 @@ ul {
 a {
   text-decoration: none;
   color: #e5e7eb;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 button:hover {
@@ -37,7 +40,7 @@ button:active {
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 900;
 }
 
@@ -61,7 +64,7 @@ button:active {
 }
 
 .hero-section .main-text {
-  font-size: 38px;
+  font-size: 2.5rem;
   font-weight: 900;
 }
 
@@ -70,7 +73,7 @@ button:active {
 }
 
 .hero-section .sub-text {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #e5e7eb;
   padding: 8px 0;
 }
@@ -85,7 +88,7 @@ button:active {
   border: none;
   padding: 10px 18px;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #f9faf8;
   width: fit-content;
@@ -114,7 +117,7 @@ button:active {
 }
 
 .about-section .main-text {
-  font-size: 34px;
+  font-size: 2.6rem;
   font-weight: 700;
   color: #1f2937;
 }
@@ -132,7 +135,7 @@ button:active {
   text-align: center;
   gap: 8px;
   width: 200px;
-  font-size: 18px;
+  font-size: 1rem;
   color: #1f2937;
 }
 
@@ -155,13 +158,13 @@ button:active {
 .review-section .quote {
   font-style: italic;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 1.8rem;
   color: #1f2937;
 }
 
 .review-section .person {
   margin-left: auto;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #1f2937;
 }
@@ -175,12 +178,12 @@ button:active {
   border-radius: 8px;
   background-color: #3c9dd1;
   color: #f8faf8;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .call-to-action .main-text {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 2rem;
   margin-bottom: 2px;
 }
 
@@ -188,7 +191,7 @@ button:active {
   border: 2px solid #f8faf8;
   padding: 10px 0px;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 1.2rem;
   background-color: #3c9dd1;
   width: 160px;
   color: #f9faf8;
@@ -202,5 +205,5 @@ button:active {
   padding: 10px 0;
   background-color: #1f2937;
   color: #f9faf8;
-  font-size: 12px;
+  font-size: 0.8rem;
 }
