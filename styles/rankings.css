@@ -14,8 +14,7 @@
 :root.dark {
   --main-accent: #3c9dd1;
   --sub-accent: #06496d;
-  --negative-accent: #e85261;
-  --negative-accent: #e85261;
+  --negative-accent: #d84b59;
   --negative-dim-accent: #fc909db3;
 
   --text-color: #e4e4e4;
@@ -63,7 +62,7 @@ button:active {
   flex-direction: column;
   align-items: center;
   width: 180px;
-  border-right: 1px solid black;
+  border-right: 1px solid var(--text-color);
 }
 
 .logo {
@@ -105,7 +104,7 @@ li {
   flex-direction: column;
   gap: 6px;
   padding: 20px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--text-color);
 }
 
 .filters {
@@ -204,6 +203,7 @@ li {
 .score {
   font-weight: 700;
   color: var(--main-accent);
+  font-size: 15px;
 }
 
 .insights {
