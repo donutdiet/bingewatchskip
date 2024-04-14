@@ -1,8 +1,8 @@
 :root.light {
   --main-accent: #3c9dd1;
-  --sub-accent: #e6f4fc;
+  --sub-accent: #c8e7f8;
   --negative-accent: #e85261;
-  --negative-dim-accent: #f7c5cbb3;
+  --negative-dim-accent: #ffb8c0b3;
   --shadow-color: rgba(82, 119, 156, 0.2);
 
   --text-color: #353c42;
@@ -17,7 +17,7 @@
   --sub-accent: #06496d;
   --negative-accent: #d84b59;
   --negative-dim-accent: #fc909db3;
-  --shadow-color: rgba(144, 196, 248, 0.377);
+  --shadow-color: rgba(134, 190, 247, 0.144);
 
   --text-color: #e4e4e4;
   --text-dim: #929292;
@@ -45,6 +45,11 @@ ul {
   list-style-type: none;
 }
 
+li,
+button {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: var(--text-color);
@@ -52,7 +57,6 @@ a {
 
 button:hover {
   filter: brightness(95%);
-  cursor: pointer;
 }
 
 button:active {
@@ -96,6 +100,10 @@ button:active {
 .tab {
   padding: 6px 0;
   background-color: var(--sub-accent);
+}
+
+.tab:hover {
+  filter: brightness(97%);
 }
 
 .toggle-theme-button {
