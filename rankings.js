@@ -25,7 +25,9 @@ function setTheme(theme) {
 /* ----------------------------------------------
 Collapsible Sidebar Menu
 - can't use "this" keyword in arrow function
-- 
+- an element's initial "display" property is always
+set to "" rather than "block" even when I am
+explicitly setting it to block? idk why
 ------------------------------------------------- */
 
 const collapsibleMenus = document.querySelectorAll(".collapsible");
@@ -37,11 +39,11 @@ for(let i=0; i<collapsibleMenus.length; i++) {
 function collapseMenu() {
     const tabs = this.nextElementSibling;
     const symbol = this.querySelector("span");
-    if(tabs.style.display === "block") {
-        tabs.style.display = "none";
-        symbol.textContent = "+";
-    } else {
+    if(tabs.style.display === "none") {
         tabs.style.display = "block";
         symbol.textContent = "-";
+    } else {
+        tabs.style.display = "none";
+        symbol.textContent = "+";
     }
 }

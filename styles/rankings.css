@@ -93,10 +93,6 @@ button:active {
   font-weight: 700;
 }
 
-.links {
-  display: none;
-}
-
 .tab {
   padding: 6px 0;
   background-color: var(--sub-accent);
