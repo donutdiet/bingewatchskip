@@ -66,14 +66,26 @@ button:active {
 .sidebar {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 180px;
-  border-right: 1px solid var(--text-color);
+  padding: 0 6px;
+  background-color: var(--sub-accent);
 }
 
 .logo {
   padding: 10px;
   font-weight: bold;
+  font-size: 18px;
+}
+.logo1 {
+  color: var(--main-accent);
+}
+.logo2 {
+  color: var(--text-color);
+}
+.logo3 {
+  color: var(--negative-accent);
 }
 
 .sidebar .tabs {
@@ -96,6 +108,7 @@ button:active {
 .tab {
   padding: 6px 0;
   background-color: var(--sub-accent);
+  font-weight: bold;
 }
 
 .tab:hover {
@@ -122,21 +135,36 @@ button:active {
 .header {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding: 20px;
-  border-bottom: 1px solid var(--text-color);
+  gap: 10px;
+  padding: 16px 16px 6px 16px;
+}
+
+.header h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.header .sub-header {
+  font-size: 14px;
 }
 
 .filters {
   display: flex;
   gap: 8px;
+  font-size: 15px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .rankings {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 12px 18px;
+  padding: 12px 16px;
   gap: 12px;
   font-size: 13px;
 }
