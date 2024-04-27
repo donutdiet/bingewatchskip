@@ -154,10 +154,43 @@ button:active {
   font-size: 15px;
 }
 
-.filter {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+.movie-filter {
+  font-size: 1em;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 6px;
+}
+
+/* https://moderncss.dev/pure-css-custom-checkbox-style/ */
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--form-background);
+  margin: 0;
+
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.1em solid currentColor;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.75em;
+  height: 0.75em;
+  transform: scale(0);
+  transition: 95ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--main-accent);
+  /* Windows High Contrast Mode */
+  background-color: currentColor;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
 }
 
 .rankings {
