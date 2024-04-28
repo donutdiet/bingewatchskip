@@ -1,5 +1,5 @@
 /* ----------------------------------------------
-Light/dark mode toggle button
+LIGHT/DARK MODE TOGGLE BUTTON
 - default light mode since I think it looks 
 better (will implement system default later)
 - 
@@ -23,7 +23,7 @@ function setTheme(theme) {
 }
 
 /* ----------------------------------------------
-Collapsible Sidebar Menu
+COLLAPSIBLE SIDEBAR MENU
 - can't use "this" keyword in arrow function
 - an element's initial "display" property is always
 set to "" rather than "block" even when I am

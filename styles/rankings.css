@@ -105,6 +105,10 @@ button:active {
   font-weight: 700;
 }
 
+.collapsible span {
+  float: right;
+}
+
 .tab {
   padding: 6px 0;
   background-color: var(--sub-accent);
