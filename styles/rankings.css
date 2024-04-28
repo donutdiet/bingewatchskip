@@ -7,7 +7,7 @@
 
   --text-color: #353c42;
   --text-dim: #929292;
-  --text-light: #f8f8f8;
+  --text-bg-match: #f8f8f8;
 
   --bg-color: #ffffff;
 }
@@ -21,7 +21,7 @@
 
   --text-color: #e4e4e4;
   --text-dim: #929292;
-  --text-dark: #353c42;
+  --text-bg-match: #353c42;
 
   --bg-color: #121212;
 }
@@ -100,7 +100,7 @@ button:active {
 .collapsible {
   border: none;
   background-color: var(--main-accent);
-  color: var(--text-light);
+  color: var(--text-bg-match);
   padding: 6px 6px 6px 18px;
   font-weight: 700;
 }
@@ -125,7 +125,7 @@ button:active {
   border-radius: 20px;
   border: none;
   background-color: var(--main-accent);
-  color: var(--text-light);
+  color: var(--text-bg-match);
   font-weight: 700;
   cursor: pointer;
 }
@@ -365,4 +365,22 @@ input[type="checkbox"]:checked::before {
 .faller-movie-score {
   font-weight: 700;
   color: var(--negative-accent);
+}
+
+.ranking-form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: var(--bg-color);
+
+  padding: 20px;
+  border-radius: 4px;
+  border: 0.5px solid var(--text-color);
+}
+
+.movie-row {
+  display: flex;
 }

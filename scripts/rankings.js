@@ -47,3 +47,19 @@ function collapseMenu() {
         symbol.textContent = "+";
     }
 }
+
+/* ----------------------------------------------
+BINGE WATCH SKIP USER RANKING FORM
+- 
+------------------------------------------------- */
+const rankingFormButton = document.querySelector(".ranking-form-button");
+const rankingForm = document.querySelector(".ranking-form");
+
+rankingFormButton.addEventListener("click", () => {
+    const computedStyle = window.getComputedStyle(rankingForm);
+    if(computedStyle.display === "none") {
+        rankingForm.style.display = "block";
+    } else {
+        rankingForm.style.display = "none";
+    }
+});
