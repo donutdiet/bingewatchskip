@@ -99,8 +99,8 @@
     <div class="footer">
       <div>Copyright &nbsp; &copy &nbsp; donutdiet 2024</div>
     </div>
-    <!--add action later-->
-    <form action="" method="post" class="sign-up-form">
+    <!--add action and method later-->
+    <form class="sign-up-form">
       <div class="sign-up-form-username">
         <input
           id="username-input"
@@ -141,8 +141,19 @@
           minlength="8"
           required
         />
-        <label for="password-input">Password</label>
+        <label for="confirm-password-input">Password *</label>
       </div>
+      <div class="sign-up-form-confirm-password">
+        <input
+          id="confirm-password-input"
+          placeholder="Confirm Password *"
+          type="password"
+          minlength="8"
+          required
+        />
+        <label for="confirm-password-input">Confirm Password</label>
+      </div>
+      <div class="error-message"></div>
       <div class="button-row">
         <!--submit functionality later-->
         <button type="submit" class="sign-up-submit">Sign up</button>

@@ -283,6 +283,12 @@ button:active {
   color: #8bc34a;
 }
 
+.error-message {
+  font-size: 14px;
+  align-self: center;
+  color: #b92326;
+}
+
 .sign-up-form .button-row {
   display: flex;
   justify-content: center;
@@ -295,7 +301,7 @@ button:active {
   border: none;
   font-weight: bold;
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 4px;
   cursor: pointer;
 }
 
