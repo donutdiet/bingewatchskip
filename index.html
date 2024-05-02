@@ -100,27 +100,55 @@
       <div>Copyright &nbsp; &copy &nbsp; donutdiet 2024</div>
     </div>
     <!--add action later-->
-    <form class="sign-up-form" method="post">
-      <ul>
-        <li>
-          <label for="name-input">Username:</label>
-          <input type="text" id="name-input" name="user_name" />
-        </li>
-        <li>
-          <label for="email-input">Email:</label>
-          <input type="text" id="email-input" name="user_email" />
-        </li>
-        <li>
-          <label for="email-input">Password:</label>
-          <input type="text" id="password-input" name="user_password" />
-        </li>
-        <li class="button-row">
-          <!--submit functionality later-->
-          <button type="button">Sign up</button>
-          <button type="button">Clear</button>
-          <button type="button">Close</button>
-        </li>
-      </ul>
+    <form action="" method="post" class="sign-up-form">
+      <div class="sign-up-form-username">
+        <input
+          id="username-input"
+          placeholder="Username *"
+          name="username"
+          value=""
+          pattern="[A-Za-z0-9_\-.]+"
+          size="24"
+          type="text"
+          minlength="3"
+          maxlength="20"
+          required
+        />
+        <label
+          for="username-input"
+          data-help="(only letters, numbers, periods, hyphens, and underscores)"
+          >Username</label
+        >
+      </div>
+      <div class="sign-up-form-email">
+        <input
+          id="email-input"
+          placeholder="Email *"
+          name="user_email"
+          value=""
+          type="email"
+          required
+        />
+        <label for="email-input">Email</label>
+      </div>
+      <div class="sign-up-form-password">
+        <input
+          id="password-input"
+          placeholder="Password *"
+          name="user_password"
+          value=""
+          type="password"
+          minlength="8"
+          required
+        />
+        <label for="password-input">Password</label>
+      </div>
+      <div class="button-row">
+        <!--submit functionality later-->
+        <button type="submit" class="sign-up-submit">Sign up</button>
+        <button type="button">Clear</button>
+        <button type="button">Close</button>
+      </div>
     </form>
     <script src="scripts/index.js"></script>
   </body>

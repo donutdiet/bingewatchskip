@@ -8,7 +8,7 @@ const signUpForm = document.querySelector(".sign-up-form");
 signUpButton.addEventListener("click", () => {
     const computedStyle = window.getComputedStyle(signUpForm);
     if(computedStyle.display === "none") {
-        signUpForm.style.display = "block";
+        signUpForm.style.display = "flex";
     } else {
         signUpForm.style.display = "none";
     }
