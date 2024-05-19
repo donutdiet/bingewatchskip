@@ -21,11 +21,11 @@ const ThemeModule = (function() {
     }
 
     function toggleTheme() {
-        if (root.className.contains("default")) {
+        if (root.classList.contains("default")) {
             setTheme("light");
         } else if (root.className === "light") {
             setTheme("dark");
-        } else if (root.classList.contains("dark")) {
+        } else if (root.className === "dark") {
             setTheme("default");
         }
     }
