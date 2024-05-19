@@ -52,30 +52,42 @@ const ThemeModule = (function() {
 ThemeModule.init();
 
 /* ----------------------------------------------
-COLLAPSIBLE SIDEBAR MENU
+COLLAPSIBLE SIDEBAR MENU MODULE
 - can't use "this" keyword in arrow function
 - an element's initial "display" property is 
 alwaysset to "" rather than "block" even when I 
 am explicitly setting it to block? idk why
 ------------------------------------------------- */
 
-const collapsibleMenus = document.querySelectorAll(".collapsible");
+const SidebarModule = (function() {
+    const sidebar = document.querySelectorAll(".collapsible");
 
-for(let i=0; i<collapsibleMenus.length; i++) {
-    collapsibleMenus[i].addEventListener("click", collapseMenu);
-}
-
-function collapseMenu() {
-    const tabs = this.nextElementSibling;
-    const symbol = this.querySelector("span");
-    if(tabs.style.display === "none") {
-        tabs.style.display = "block";
-        symbol.textContent = "-";
-    } else {
-        tabs.style.display = "none";
-        symbol.textContent = "+";
+    function init() {
+        bindEvents();
     }
-}
+
+    function bindEvents() {
+        sidebar.forEach((menu) => menu.addEventListener("click", toggleMenu));
+    }
+
+    function toggleMenu() {
+        const tabs = this.nextElementSibling;
+        const symbol = this.querySelector("span");
+        if(tabs.style.display === "none") {
+            tabs.style.display = "block";
+            symbol.textContent = "-";
+        } else {
+            tabs.style.display = "none";
+            symbol.textContent = "+";
+        }
+    }
+
+    return {
+        init
+    };
+})();
+
+SidebarModule.init();
 
 /* ----------------------------------------------
 BINGE WATCH SKIP USER RANKING FORM
