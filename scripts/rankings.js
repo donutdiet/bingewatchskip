@@ -1,26 +1,55 @@
 /* ----------------------------------------------
-LIGHT/DARK MODE TOGGLE BUTTON
-- default light mode since I think it looks 
-better (will implement system default later)
+LIGHT/DARK MODE TOGGLE BUTTON MODULE
+- set default mode to system preferences
+- edit textContent in setTheme so the text is
+updated on init()
 - 
 ------------------------------------------------- */
 
-setTheme("light");
-
-document.querySelector(".toggle-theme-button").addEventListener("click", toggleTheme);
-
-function toggleTheme() {
+const ThemeModule = (function() {
     const root = document.documentElement;
-    root.className == "dark" ? setTheme("light") : setTheme("dark");
+    const button = root.querySelector(".toggle-theme-button");
+    const preference = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 
-    document.querySelector(".toggle-theme-button").textContent = newTheme.charAt(0).toUpperCase() + newTheme.slice(1) + " Mode";
-}
+    function init() {
+        bindEvents();
+        setTheme("default");
+    }
 
-function setTheme(theme) {
-    const root = document.documentElement;
-    root.className = theme;
-    document.querySelector(".toggle-theme-button").textContent = theme.charAt(0).toUpperCase() + theme.slice(1) + " Mode";
-}
+    function bindEvents() {
+        button.addEventListener("click", toggleTheme);
+    }
+
+    function toggleTheme() {
+        if (root.className.contains("default")) {
+            setTheme("light");
+        } else if (root.className === "light") {
+            setTheme("dark");
+        } else if (root.classList.contains("dark")) {
+            setTheme("default");
+        }
+    }
+
+    function setTheme(theme) {
+        if(theme === "light" || theme === "dark") {
+            root.className = theme;
+            button.textContent = `${capitalize(theme)} Mode`
+        } else if(theme === "default") {
+            root.classList.add("default", preference);
+            button.textContent = "Default Mode";
+        }
+    }
+
+    function capitalize(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+
+    return {
+        init
+    };
+})();
+
+ThemeModule.init();
 
 /* ----------------------------------------------
 COLLAPSIBLE SIDEBAR MENU

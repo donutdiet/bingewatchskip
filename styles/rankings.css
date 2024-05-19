@@ -204,6 +204,13 @@ input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
+/* Doesn't work for some reason */
+.genre-filter,
+.runtime-filter {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
 .rankings {
   flex: 1;
   display: flex;
@@ -383,4 +390,8 @@ input[type="checkbox"]:checked::before {
 
 .movie-row {
   display: flex;
+}
+
+.movie-row fieldset {
+  flex: 1;
 }
