@@ -39,9 +39,11 @@ const ThemeModule = (function() {
     function capitalize(str) {
         return str.charAt(0).toUpperCase() + str.slice(1);
     }
-})();
 
-ThemeModule.init();
+    return {
+        toggleTheme,
+    }
+})();
 
 /* ----------------------------------------------
 COLLAPSIBLE SIDEBAR MENU MODULE
