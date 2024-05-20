@@ -154,55 +154,69 @@
         </div>
       </div>
     </div>
-    <form action="" method="post" class="ranking-form">
-      <h1>Share your Opinion</h1>
-      <p>All our rankings and scores are crowdsourced from users like you.</p>
-      <p>
-        Rank the three movies below based on how much you'd like to watch them.
-        Binge your first pick, Watch the second option, and Skip your last
-        choice.
-      </p>
-      <section class="movie-row">
-        <fieldset>
-          <legend>Movie 1</legend>
-          <label for="moive1">
-            Binge<input type="radio" name="rank1" value="binge" />
-          </label>
-          <label for="moive1">
-            Watch<input type="radio" name="rank1" value="watch" />
-          </label>
-          <label for="moive1">
-            Skip<input type="radio" name="rank1" value="skip" />
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend>Movie 1</legend>
-          <label for="moive1">
-            Binge<input type="radio" name="rank2" value="binge" />
-          </label>
-          <label for="moive1">
-            Watch<input type="radio" name="rank2" value="watch" />
-          </label>
-          <label for="moive1">
-            Skip<input type="radio" name="rank2" value="skip" />
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend>Movie 1</legend>
-          <label for="moive1">
-            Binge<input type="radio" name="rank3" value="binge" />
-          </label>
-          <label for="moive1">
-            Watch<input type="radio" name="rank3" value="watch" />
-          </label>
-          <label for="moive1">
-            Skip<input type="radio" name="rank3" value="skip" />
-          </label>
-        </fieldset>
-      </section>
-      <button type="button">Submit</button>
-      <p>I don't know these movies.</p>
-    </form>
+    <dialog class="ranking-form-dialog">
+      <form action="" method="post" class="ranking-form">
+        <h1>Share your Opinion</h1>
+        <p>All our rankings and scores are crowdsourced from users like you.</p>
+        <p>
+          Rank the three movies below based on how much you'd like to watch
+          them. Binge your first pick, Watch the second option, and Skip your
+          last choice.
+        </p>
+        <section class="movie-row">
+          <fieldset>
+            <legend>Movie 1</legend>
+            <label for="moive1">
+              Binge
+              <input type="radio" name="movie1" value="binge" />
+            </label>
+            <label for="moive1">
+              Watch
+              <input type="radio" name="movie1" value="watch" />
+            </label>
+            <label for="moive1">
+              Skip
+              <input type="radio" name="movie1" value="skip" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Movie 2</legend>
+            <label for="moive2">
+              Binge
+              <input type="radio" name="movie2" value="binge" />
+            </label>
+            <label for="moive2">
+              Watch
+              <input type="radio" name="movie2" value="watch" />
+            </label>
+            <label for="moive2">
+              Skip
+              <input type="radio" name="movie2" value="skip" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Movie 3</legend>
+            <label for="moive3">
+              Binge
+              <input type="radio" name="movie3" value="binge" />
+            </label>
+            <label for="moive3">
+              Watch
+              <input type="radio" name="movie3" value="watch" />
+            </label>
+            <label for="moive3">
+              Skip
+              <input type="radio" name="movie3" value="skip" />
+            </label>
+          </fieldset>
+        </section>
+        <div class="buttons">
+          <button type="button" class="submit-button">Submit</button>
+          <button type="button" class="close-button">Close</button>
+        </div>
+        <p>I don't know these movies.</p>
+      </form>
+    </dialog>
     <script src="../scripts/rankings.js"></script>
   </body>
 </html>

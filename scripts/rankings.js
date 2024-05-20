@@ -2,15 +2,16 @@
 LIGHT/DARK MODE TOGGLE BUTTON MODULE
 - set default mode to system preferences
 - edit textContent in setTheme so the text is
-updated on init()
+updated accordingly when the page loads in
 - 
 ------------------------------------------------- */
 
 const ThemeModule = (function() {
+    // Cache DOM
     const root = document.documentElement;
     const button = root.querySelector(".toggle-theme-button");
     const preference = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-
+    // Bind Events
     button.addEventListener("click", toggleTheme);
     setTheme("default");
 
@@ -73,17 +74,26 @@ const SidebarModule = (function() {
 })();
 
 /* ----------------------------------------------
-BINGE WATCH SKIP USER RANKING FORM
+BINGE WATCH SKIP USER RANKING FORM MODULE
 - 
 ------------------------------------------------- */
-const rankingFormButton = document.querySelector(".ranking-form-button");
-const rankingForm = document.querySelector(".ranking-form");
 
-rankingFormButton.addEventListener("click", () => {
-    const computedStyle = window.getComputedStyle(rankingForm);
-    if(computedStyle.display === "none") {
-        rankingForm.style.display = "block";
-    } else {
-        rankingForm.style.display = "none";
+const RankingForm = (function() {
+    const rankingFormDialog = document.querySelector(".ranking-form-dialog");
+    const rankingForm = rankingFormDialog.querySelector("form");
+    const openFormButton = document.querySelector(".ranking-form-button");
+    const closeFormButton = rankingForm.querySelector(".close-button");
+    const submitFormButton = rankingForm.querySelector(".submit-button");
+
+    openFormButton.addEventListener("click", openForm);
+    closeFormButton.addEventListener("click", closeForm);
+
+    function openForm() {
+        rankingFormDialog.showModal();
     }
-});
+
+    function closeForm() {
+        rankingForm.reset();
+        rankingFormDialog.close();
+    }
+})();
