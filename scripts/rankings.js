@@ -11,14 +11,8 @@ const ThemeModule = (function() {
     const button = root.querySelector(".toggle-theme-button");
     const preference = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 
-    function init() {
-        bindEvents();
-        setTheme("default");
-    }
-
-    function bindEvents() {
-        button.addEventListener("click", toggleTheme);
-    }
+    button.addEventListener("click", toggleTheme);
+    setTheme("default");
 
     function toggleTheme() {
         if (root.classList.contains("default")) {
@@ -37,16 +31,14 @@ const ThemeModule = (function() {
         } else if(theme === "default") {
             root.classList.add("default", preference);
             button.textContent = "Default Mode";
+        } else {
+            console.log("Error: not a valid theme");
         }
     }
 
     function capitalize(str) {
         return str.charAt(0).toUpperCase() + str.slice(1);
     }
-
-    return {
-        init
-    };
 })();
 
 ThemeModule.init();
@@ -62,15 +54,10 @@ am explicitly setting it to block? idk why
 const SidebarModule = (function() {
     const sidebar = document.querySelectorAll(".collapsible");
 
-    function init() {
-        bindEvents();
-    }
-
-    function bindEvents() {
-        sidebar.forEach((menu) => menu.addEventListener("click", toggleMenu));
-    }
+    sidebar.forEach((menu) => menu.addEventListener("click", toggleMenu));
 
     function toggleMenu() {
+        // this refers to the menu that triggers the event
         const tabs = this.nextElementSibling;
         const symbol = this.querySelector("span");
         if(tabs.style.display === "none") {
@@ -81,13 +68,7 @@ const SidebarModule = (function() {
             symbol.textContent = "+";
         }
     }
-
-    return {
-        init
-    };
 })();
-
-SidebarModule.init();
 
 /* ----------------------------------------------
 BINGE WATCH SKIP USER RANKING FORM
