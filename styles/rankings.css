@@ -6,7 +6,7 @@
   --shadow-color: rgba(82, 119, 156, 0.2);
 
   --text-color: #353c42;
-  --text-dim: #929292;
+  --text-dim: #b3b3b3;
   --text-bg-match: #f8f8f8;
 
   --bg-color: #ffffff;
@@ -46,7 +46,8 @@ ul {
 }
 
 li,
-button {
+button,
+input[type="checkbox"] {
   cursor: pointer;
 }
 
@@ -127,7 +128,6 @@ button:active {
   background-color: var(--main-accent);
   color: var(--text-bg-match);
   font-weight: 700;
-  cursor: pointer;
 }
 
 .content {
@@ -204,7 +204,6 @@ input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
-/* Doesn't work for some reason */
 .genre-filter,
 .runtime-filter {
   background-color: var(--bg-color);
@@ -379,6 +378,7 @@ input[type="checkbox"]:checked::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 800px;
 
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -388,10 +388,78 @@ input[type="checkbox"]:checked::before {
   border: 1px solid var(--text-color);
 }
 
+.ranking-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.ranking-form .description {
+  font-size: 14px;
+  text-align: center;
+}
+
+.ranking-form h1 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
 .movie-row {
   display: flex;
+  gap: 4px;
+  padding: 12px 0;
 }
 
 .movie-row fieldset {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.movie-row legend {
+  font-weight: bold;
+  padding: 0 2px;
+  font-size: 11px;
+}
+
+fieldset p {
+  font-weight: bold;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ranking-form .buttons {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 4px;
+}
+
+.ranking-form .submit-button,
+.ranking-form .close-button {
+  padding: 8px 16px;
+  border: 1px solid var(--text-color);
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.ranking-form .submit-button {
+  background-color: var(--sub-accent);
+  border: none;
+}
+.ranking-form .close-button {
+  background-color: var(--bg-color);
+}
+
+.ranking-form .dont-know {
+  font-size: 11px;
+  text-decoration: underline;
+  cursor: pointer;
 }

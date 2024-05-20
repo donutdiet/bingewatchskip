@@ -85,6 +85,8 @@ const RankingForm = (function() {
     const closeFormButton = rankingForm.querySelector(".close-button");
     const submitFormButton = rankingForm.querySelector(".submit-button");
 
+    openForm(); // TEMP
+
     openFormButton.addEventListener("click", openForm);
     closeFormButton.addEventListener("click", closeForm);
 
